@@ -19,7 +19,23 @@ proviamo ad immaginare le operazioni che vogliamo far svolgere al nostro program
 
  dal momento che vogliamo che se il numero è divisibile per entrambi stampi "FizzBuzz", creerei una variabile globale per il messaggio
  la svuoterei all'inizio del ciclo, poi se è divisibile per 3 ci metterei dentro Fizz, se è divisibile per 5 ci inserirei Buzz, in tal modo
- se è divisibile per entrambi la variabile conterrà entrambi i valori, poi prima di chiudere il ciclo la stamperei.
+ se è divisibile per entrambi la variabile conterrà entrambi i valori, poi prima di chiudere il ciclo la stamperei se non è nulla.
 */
 
 
+let message;
+for (let i=1; i<=100; i++) {
+    message = null;
+    if (i%3==0) {
+        message = "Fizz";
+    }
+    if (i%5==0) {
+        if (message!=null) {
+        message = message+"Buzz"
+        }
+        else {
+            message="Buzz"
+        }
+    }
+    if (message!=null) console.log(i , message);
+}
