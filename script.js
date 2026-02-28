@@ -20,6 +20,9 @@ proviamo ad immaginare le operazioni che vogliamo far svolgere al nostro program
  dal momento che vogliamo che se il numero è divisibile per entrambi stampi "FizzBuzz", creerei una variabile globale per il messaggio
  la svuoterei all'inizio del ciclo, poi se è divisibile per 3 ci metterei dentro Fizz, se è divisibile per 5 ci inserirei Buzz, in tal modo
  se è divisibile per entrambi la variabile conterrà entrambi i valori, poi prima di chiudere il ciclo la stamperei se non è nulla.
+
+ EDIT dal momento che anche se il valore è undefined se provo a concatenarla poi mi trovo "undefinedBuzz" ho dovuto aggiungere un controllo
+ addizionale, in tal modo se è null come impostata da me metto solo BUZZ altrimenti lo appendo al messaggio
 */
 
 
