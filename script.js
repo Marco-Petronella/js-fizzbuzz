@@ -41,4 +41,6 @@ for (let i=1; i<=100; i++) {
         }
     }
     if (message!=null) console.log(i , message);
+    else console.log(i);
+    
 }
