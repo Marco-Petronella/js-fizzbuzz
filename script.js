@@ -28,19 +28,9 @@ proviamo ad immaginare le operazioni che vogliamo far svolgere al nostro program
 
 let message;
 for (let i=1; i<=100; i++) {
-    message = null;
-    if (i%3==0) {
-        message = "Fizz";
-    }
-    if (i%5==0) {
-        if (message!=null) {
-        message = message+"Buzz"
-        }
-        else {
-            message="Buzz"
-        }
-    }
-    if (message!=null) console.log(i , message);
-    else console.log(i);
+    message = "";
+    if (i%3==0) message = "Fizz";
+    if (i%5==0) message = message+"Buzz"
+    console.log(i, message);
     
 }
