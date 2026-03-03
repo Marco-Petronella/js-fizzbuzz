@@ -25,12 +25,18 @@ proviamo ad immaginare le operazioni che vogliamo far svolgere al nostro program
  addizionale, in tal modo se è null come impostata da me metto solo BUZZ altrimenti lo appendo al messaggio
 */
 
-
-let message;
-for (let i=1; i<=100; i++) {
-    message = "";
-    if (i%3==0) message = "Fizz";
-    if (i%5==0) message = message+"Buzz"
-    console.log(i, message);
+// versione bonus
+// let message;
+// for (let i=1; i<=100; i++) {
+//     message = "";
+//     if (i%3==0) message = "Fizz";
+//     if (i%5==0) message = message+"Buzz"
+//     console.log(i, message);
     
+// }
+for (let i=1; i<=100; i++) {
+    if (i%3==0 && i%5==0) console.log(i, "FizzBuzz");
+    else if (i%3==0) console.log(i, "Fizz");
+    else if (i%5==0) console.log(i, "Buzz");
+    else console.log(i);
 }
